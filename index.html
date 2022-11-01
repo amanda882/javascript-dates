@@ -16,11 +16,11 @@
         <button id="submitButton" type="button">Submit</button>
         <p>
             Submit a date to know what happened on that day.
+            <span id="dateResponse">The date you selected is <output id="submit"></output> 
+            </span>
         </p>
 
     </form>
-
-    <output id="submit"></output>
 
     <script>
         let dateBtn = document.getElementById('submitButton');
@@ -32,6 +32,7 @@
             subbmisison = subbmisison.toString();
             let submit = document.getElementById('submit');
             submit.innerText = subbmisison;
+            console.log(dateResponse);
             console.log(subbmisison);
         }
 
